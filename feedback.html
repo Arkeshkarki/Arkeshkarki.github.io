@@ -2,13 +2,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Feedback Form</title>
-  <link rel="stylesheet" href="style.html">
+  <title>Interactive Feedback Form</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
     <h1>Feedback Form</h1>
-    <nav>
+        <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About Me</a></li>
@@ -22,24 +22,86 @@
 
   <main>
     <form action="#" method="post">
+      <table border="1" cellpadding="10" cellspacing="0">
       
-      <label for="name">Your Name:</label><br>
-      <input type="text" id="name" name="name" required><br><br>
-
-     
-      <label for="email">Your Email:</label><br>
-      <input type="email" id="email" name="email" required><br><br>
+        <tr>
+          <td><label for="name">Your Name:</label></td>
+          <td><input type="text" id="name" name="name" required></td>
+        </tr>
 
       
-      <label for="message">Your Feedback:</label><br>
-      <textarea id="message" name="message" rows="5" cols="40" required></textarea><br><br>
+        <tr>
+          <td><label for="email">Your Email:</label></td>
+          <td><input type="email" id="email" name="email" required></td>
+        </tr>
 
-      <button type="submit">Submit Feedback</button>
+  
+        <tr>
+          <td><label for="age">Your Age:</label></td>
+          <td><input type="number" id="age" name="age" min="10" max="100"></td>
+        </tr>
+
+      
+        <tr>
+          <td>Gender:</td>
+          <td>
+            <input type="radio" id="male" name="gender" value="Male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="Other">
+            <label for="other">Other</label>
+          </td>
+        </tr>
+
+      
+        <tr>
+          <td>Rate Our Website:</td>
+          <td>
+            <select name="rating" id="rating">
+              <option value="Excellent">Excellent</option>
+              <option value="Good">Good</option>
+              <option value="Average">Average</option>
+              <option value="Poor">Poor</option>
+            </select>
+          </td>
+        </tr>
+
+       
+        <tr>
+          <td>What did you like?</td>
+          <td>
+            <input type="checkbox" id="design" name="like" value="Design">
+            <label for="design">Design</label><br>
+            <input type="checkbox" id="content" name="like" value="Content">
+            <label for="content">Content</label><br>
+            <input type="checkbox" id="usability" name="like" value="Usability">
+            <label for="usability">Usability</label>
+          </td>
+        </tr>
+
+       
+        <tr>
+          <td><label for="message">Your Feedback:</label></td>
+          <td><textarea id="message" name="message" rows="5" cols="40" required></textarea></td>
+        </tr>
+
+        <tr>
+          <td colspan="2" style="text-align:center;">
+            <button type="submit">Submit Feedback</button>
+            <button type="reset">Reset Form</button>
+          </td>
+        </tr>
+      </table>
     </form>
   </main>
 
   <footer>
-    <p> 2026 Arkesh | Built with using GitHub Pages</p>
+    <p>&copy; 2026 Aarkesh | Built with using GitHub Pages</p>
   </footer>
 </body>
 </html>
+
+    
+      
+   
