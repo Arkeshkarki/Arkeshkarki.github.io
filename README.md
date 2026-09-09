@@ -15,7 +15,7 @@
         <li><a href="projects.html">Projects</a></li>
         <li><a href="contact.html">Contact</a></li>
         <li><a href="feedback.html">Feedback</a></li>
-        <li><a href="My gallary.html">Feedback</a></li>
+        <li><a href="My gallery.html">My Gallery</a></li>
       </ul>
     </nav>
   </header>
