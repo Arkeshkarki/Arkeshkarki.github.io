@@ -36,12 +36,20 @@ section {
   margin-bottom: 30px;
 }
 
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* full height of screen */
+}
+
+main {
+  flex: 1; /* pushes footer down */
+}
+
 footer {
   background: #333;
   color: #fff;
   text-align: center;
-  padding: 0.5rem;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
+  padding: 10px;
 }
